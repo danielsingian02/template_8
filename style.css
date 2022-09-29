@@ -1,0 +1,310 @@
+/* Theme Name: Template 8
+Text Domain: Template 8
+Version: 1.8
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
+Author: iPhiTech IT Digital Solutions Corporation
+Author URI: iPhiTech IT Digital Solutions Corporation
+*/
+
+/* my css */
+img.header_logo {
+    height: 139px;
+}
+.left-foot img {
+    height: 61px;
+}
+/* end of my css */
+* {
+    font-size: 13px;
+}
+nav {
+    height: 139px;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    flex-direction: row;
+}
+.logo-container {
+    height: 139px;
+    width: 200px;
+}
+.menu-container {
+    width: 559px;
+    height: 68px;
+    background-color: #292929;
+    color: white;
+    padding: 25px;
+    margin-left: 405px;
+}
+.menu-container li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.banner {
+    width: 1371px;
+    height: 544px;
+    margin: auto;
+    margin-top: -105px;
+    text-align: center;
+    padding-top: 193px;
+    margin-bottom: 99px;
+
+}
+.banner h1 {
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: white
+}
+.banner button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    width: 144px;
+    height: 44px;
+    font-size: 15px;
+    margin-top: 31px;
+}
+.img-text {
+    width: 897px;
+    margin: auto;
+}
+.img-text img {
+    margin-top: -225px;
+    margin-left: 405px;
+    position: relative;
+    z-index: -1;
+}
+.head-text {
+    border-left: 3px solid black;
+    padding-left: 14px;
+    margin-bottom: 49px;
+}
+.head-text h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 88%;
+    letter-spacing: -0.005em;
+}
+.content-text {
+    background-color: white;
+    width: 542px;
+    height: 194px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.content-text p {
+    width: 505px;
+    height: 172px;
+}
+
+.img-text--invert {
+    width: 897px;
+    margin: auto;
+    margin-top: 120px;
+}
+.img-text--invert img {
+    position: relative;
+    margin-top: -260px;
+    z-index: -1;
+}
+.head-text--invert {
+    border-left: 3px solid black;
+    padding-left: 14px;
+    margin-bottom: 49px;
+    margin-left: 350px;
+}
+.head-text--invert h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 88%;
+    letter-spacing: -0.005em;
+}
+.content-text--invert {
+    background-color: white;
+    width: 542px;
+    height: 232px;
+    margin-left: 350px;
+    padding: 10px;
+}
+.content-text--invert p {
+    width: 505px;
+    height: 172px;
+}
+
+.house {
+    width: 95%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.house img {
+    width: 100%;
+}
+footer {
+    width: 897px;
+    height: 316px;
+    background-color: #E8E8E8;
+    margin: auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.left-foot, .right-foot {
+    width: 50%;
+}
+.left-foot {
+    padding: 73px 20px 20px 20px;
+    font-size: 11px;
+}
+.left-foot img {
+    margin-bottom: 36px;
+}
+.left-foot li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+ul {
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner {
+        width: 100%;
+    }
+
+    .menu-container {
+        margin-left: 93px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        height: 150px;
+        padding: 0px 20px 0px 20px;
+    }
+    .menu-container ul {
+        text-align: right;
+    }
+    .menu-container li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .img-text {
+        width: 700px;
+    }
+    .img-text img {
+        margin-top: -225px;
+        margin-left: 200px;
+    }
+    .img-text--invert {
+        width: 700px;
+    }
+    .content-text--invert {
+        width: 270px;
+        margin-left: 270px;
+    }
+    .content-text--invert p {
+        width: 100%;
+    }
+
+    footer {
+        width: 95%;
+        height: 257px;
+    }
+    .left-foot {
+        padding: 32px 20px 20px 20px;
+        font-size: 11px;
+    }
+    .right-foot img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .menu-container {
+        height: 200px;
+    }
+    .banner h1 {
+        font-size: 70px;
+    }
+    .img-text, .img-text--invert {
+        width: 400px;
+    }
+    .img-text img {
+        margin-top: -285px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .head-text--invert {
+        margin-left: 0;
+    }
+    .content-text {
+        background-color: white;
+        width: 350px;
+        height: 245px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .head-text h2, .head-text--invert h2 {
+        font-size: 30px;
+    }
+    .content-text p {
+        width: 100%;
+    }
+    .content-text--invert {
+        width: 350px;
+        margin-left: 10px;
+    }
+    .img-text--invert img {
+        width: 100%;
+    }
+
+    footer {
+        width: 95%;
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-foot, .right-foot {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .menu-container {
+        margin-left: 10px;
+    }
+    .img-text, .img-text--invert {
+        width: 350px;
+    }
+    .content-text {
+        width: 330px;
+    }
+    .content-text--invert {
+        width: 330px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .banner h1 {
+        margin-top: 50px;
+        font-size: 40px;
+        line-height: 1;
+    }
+    .img-text, .img-text--invert {
+        width: 280px;
+    }
+    .content-text, .content-text--invert {
+        width: 260px;
+    }
+    .img-text img, .img-text--invert img {
+        margin-top: -345px;
+}
