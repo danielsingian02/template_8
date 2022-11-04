@@ -531,4 +531,39 @@ footer .right-foot img {
 }
 .site-content-search article:hover a {
   color: inherit;
+}
+
+.container {
+  padding: 1rem;
+}
+.container .media {
+  border: 2px solid black;
+  border-radius: 12px;
+  color: black;
+}
+.container .media .media-content {
+  margin: 1.5em;
+}
+.container .media .media-content .read-more {
+  background-color: black;
+  padding: 0.7rem 1rem;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+.container .media a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .media:hover {
+  border-color: black;
+  color: black;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
