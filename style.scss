@@ -234,6 +234,13 @@ header {
     flex-direction: column;
     margin: auto;
     margin-bottom: 112px;
+    height: 100%;
+
+    @media #{ $media_mobile } {
+        width: 95%;
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
 
     & .head-text {
         display: flex;
@@ -243,6 +250,14 @@ header {
         color: #000000;
         border-left: 3px solid black;
         padding-left: 12px;
+
+        @media #{ $media_tablet } {
+            margin-top: 1rem;
+        }
+
+        & h2 {
+            margin: 0;
+        }
     }
 
     & .img-text-second__header {
@@ -253,13 +268,29 @@ header {
 
     & .content-text {
         display: flex;
-        position: relative;
         flex-direction: row;
         background-image: url(assets/images/Asset\ 1\ template\ 8\ 1.png);
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
         height: 406px;
+
+        @media #{ $media_mobile } {
+            background: none;
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        & .content-text-img {
+            display: none;
+
+            @media #{ $media_mobile } {
+                display: flex;
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }
+        }
 
         &--second {
             background-image: url(assets/images/Asset\ 2\ 1.png);
@@ -268,12 +299,34 @@ header {
             background-repeat: no-repeat;
             height: 406px;
 
+            @media #{ $media_mobile } {
+                background: none;
+                flex-wrap: wrap;
+                height: auto;
+            }
+
+            & .content-text-img {
+                display: none;
+
+                @media #{ $media_mobile } {
+                    display: flex;
+                    width: 90%;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+
             & .context-text__text {
                 width: 66.5%;
                 margin-top: 15px;
                 padding: 30px 10px 26px 15px;
                 background-color: white;
                 margin-left: auto;
+
+                @media #{ $media_tablet } {
+                    width: 100%;
+                    margin: 0;
+                }
             }
         }
 
@@ -293,6 +346,11 @@ header {
             color: #000000;
             margin-left: 48px;
             padding: 10px;
+
+            @media #{ $media_tablet } {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 
@@ -311,6 +369,10 @@ header {
         margin: auto;
         display: flex;
         height: auto;
+    }
+
+    @media #{ $media_tablet } {
+        display: none;
     }
 }
 
@@ -364,7 +426,7 @@ footer {
                     }
                 }
             }
-        }       
+        }
 
         & .copyright {
             font-weight: 400;
@@ -372,5 +434,21 @@ footer {
             letter-spacing: 0.075em;
             color: #000000;
         }
+    }
+
+    & .right-foot {
+        display: flex;
+
+        & img {
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    @media #{ $media_tablet } {
+        flex-wrap: wrap;
+        width: 90%;
+        flex-direction: column;
     }
 }
