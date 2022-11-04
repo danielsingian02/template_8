@@ -479,4 +479,56 @@ footer .right-foot img {
   .site-content-404 {
     padding: 4rem 2rem;
   }
+}
+
+.site-content-search {
+  color: black;
+}
+.site-content-search header {
+  background-color: initial;
+}
+.site-content-search > .search-results {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: inherit;
+  padding: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .site-content-search > .search-results {
+    padding: 1rem;
+  }
+}
+.site-content-search article {
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.site-content-search article a {
+  text-decoration: none;
+  color: black;
+}
+.site-content-search article + article {
+  margin-top: 1rem;
+}
+.site-content-search article .content {
+  margin: 1.5rem;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 15rem;
+}
+.site-content-search article .entry-header-search {
+  font-weight: 700;
+}
+.site-content-search article .entry-content-search {
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+}
+.site-content-search article:hover {
+  border-color: black;
+  color: black;
+}
+.site-content-search article:hover a {
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */
